@@ -1,0 +1,53 @@
+.front,
+.front-body{
+	/*display: table-cell;*/
+    vertical-align: middle;
+}
+
+.front{
+
+}
+
+.front-body{
+	width: 80%;
+	padding: 100px 0;
+	display: table;
+}
+
+.front-menu{
+	border-radius: 35px;
+	padding: 10px 10px;
+	opacity: 0.55;
+	display: block;
+	background-color: #222222;
+}
+
+.front-button{
+	border-radius: 35px;
+	/*border: 20 px;*/
+	background-color: #FFFFFF;
+	/*margin: 0 0 35px;*/
+	
+	opacity: 0.85;
+
+	padding: 10px 16px;
+}
+
+.front-button-heading{
+	opacity: 1;
+	font-weight: 700;
+    letter-spacing: 1px
+    font-size: 42px;
+    line-height: 1.3333333;
+	text-align: center;
+}
+
+.front-body,
+.front-menu,
+.front-button
+{
+	height: 100%;
+}
+
+
+
