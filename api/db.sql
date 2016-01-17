@@ -9,16 +9,16 @@ CREATE TABLE `suspref`.`business` (
   `name` VARCHAR(255) NOT NULL,
   `email` VARCHAR(255) NOT NULL,
   `owner_name` VARCHAR(255),
-  `create_time` DATETIME NOT NULL DEFAULT now(),
+  `create_time` DATETIME NOT NULL,
   `password` VARCHAR(255) NOT NULL,
   PRIMARY KEY (`bid`));
 
-CREATE TABLE `suspgref`.`receipt` (
+CREATE TABLE `suspref`.`receipt` (
   `rid` INT NOT NULL auto_increment,
   `bid` INT NOT NULL,
   `return_flag` INT NOT NULL DEFAULT 0,
   `total` DECIMAL(10,2) NOT NULL,
-  `purchase_time` DATETIME NOT NULL DEFAULT now(),
+  `purchase_time` DATETIME NOT NULL,
   PRIMARY KEY (`rid`),
   FOREIGN KEY (`bid`) REFERENCES `suspref`.`business` (`bid`));
 
