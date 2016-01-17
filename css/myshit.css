@@ -88,3 +88,7 @@ body {
     border-bottom: 0;
   }
 }
+
+input::selection {
+  background: #ACCEF7;
+}
